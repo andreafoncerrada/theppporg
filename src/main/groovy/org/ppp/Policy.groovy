@@ -11,8 +11,8 @@ class Policy {
   String tags
   String country
   String state
-  String county/Municipality
-  String city/Metropolitan_area
+  String county_municipality
+  String city_metropolitan_area
   String language
   String targeted_population
   String population_affected_by_the_program
@@ -33,7 +33,7 @@ class Policy {
   String date_of_implementation
   String date_of_closure
   String duration_of_program
-  String legislative_reforms/Acts
+  String legislative_reforms_acts
   String total_annual_operational_costs
   String staff_costs
   String transfer_costs
@@ -47,7 +47,7 @@ class Policy {
   String partners
   String evidence_Strong_theory_of_change
   String process_map_available
-  String implementors_available_for_comment_
+  String implementors_available_for_comment
   String authors
   String authors_related_work
   String link_to_authors_related_work
