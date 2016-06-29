@@ -7,7 +7,6 @@ class Policy {
   String policy_area_PP
   String policy_subcategory
   String title
-  String released_by
   String the_abstract
   String tags
   String country
@@ -19,7 +18,7 @@ class Policy {
   String population_affected_by_the_program
   String budget
   String funding_details
-  String sponsor(s)
+  String sponsors
   String time_between_enactment_and_funding
   String reason_for_enactment
   String problem
@@ -40,7 +39,7 @@ class Policy {
   String transfer_costs
   String material_costs
   String other_costs
-  String implementation_team_size_(number)
+  String implementation_team_size_number
   String stakeholders_policy_makers
   String stakeholders_congressmen
   String stakeholders_NGOs
