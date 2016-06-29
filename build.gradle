@@ -1,5 +1,15 @@
+apply plugin: 'liquibase'
 apply plugin: "groovy"
 apply plugin: "jetty"
+
+buildscript {
+  repositories {
+    mavenCentral()
+  }
+  dependencies {
+    classpath "org.liquibase:liquibase-gradle-plugin:1.2.1"
+  }
+}
 
 repositories {
   mavenCentral()
@@ -8,4 +18,15 @@ repositories {
 dependencies {
   compile 'org.codehaus.groovy:groovy-all:2.4.4'
   testCompile 'org.spockframework:spock-core:0.7-groovy-2.0'
+}
+
+liquibase {
+  activities {
+    main {
+      changeLogFile 'src/main/db/changelogs.groovy'
+      url 'jdbc:mysql://localhost:3306/my_db'
+      username 'myusername'
+      password 'mypassword'
+    }
+  }
 }
