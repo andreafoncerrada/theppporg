@@ -1,1 +1,1 @@
-out << new File("src/main/webapp/index.html")
+out << new File("src/main/webapp/index.html").text
