@@ -8,6 +8,7 @@ buildscript {
   }
   dependencies {
     classpath "org.liquibase:liquibase-gradle-plugin:1.2.1"
+    classpath 'mysql:mysql-connector-java:5.1.39'
   }
 }
 
@@ -24,10 +25,11 @@ dependencies {
 liquibase {
   activities {
     main {
-      changeLogFile 'src/main/db/changelogs.groovy'
-      url 'jdbc:mysql://localhost:3306/my_db'
-      username 'myusername'
-      password 'mypassword'
+      changeLogFile 'src/main/migrations/changelogs.groovy'
+      // Note: you should use the external variable ORG_GRADLE_PROJECT_variableName
+      url url
+      username username
+      password password
     }
   }
 }
