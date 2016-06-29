@@ -1,8 +1,1 @@
-def engine   = new groovy.text.SimpleTemplateEngine()
-def source   = getClass().classLoader.getResource('main/webapp/index.html')
-file = new File("src/main/webapp/index.html")
-println file.text
-//println getClass().classLoader.dump()
-//def template = engine.createTemplate(source)
-//def result = []
 out << new File("src/main/webapp/index.html")
