@@ -1,6 +1,6 @@
 package org.ppp
 
-class Policiy {
+class Policy {
 
   String registryNumber
   String registryCode
