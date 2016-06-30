@@ -1,3 +1,4 @@
+
 {
-  "directory": "src/main/webapp/third-party"
+  "directory": "grails-app/assets/javascripts/third-party"
 }
