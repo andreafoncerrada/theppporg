@@ -1,35 +1,35 @@
-apply plugin: "groovy"
-apply plugin: "jetty"
-apply plugin: 'org.liquibase.gradle'
-
 buildscript {
+  ext {
+    springBootVersion = '1.3.5.RELEASE'
+  }
   repositories {
     mavenCentral()
   }
   dependencies {
-    classpath "org.liquibase:liquibase-gradle-plugin:1.2.1"
-    classpath 'mysql:mysql-connector-java:5.1.39'
+    classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}") 
   }
 }
+
+apply plugin: 'groovy'
+apply plugin: 'spring-boot' 
+
+jar {
+  baseName = 'hub'
+  version = '0.0.1-SNAPSHOT'
+}
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
 
 repositories {
   mavenCentral()
 }
 
 dependencies {
-  compile 'org.codehaus.groovy:groovy-all:2.4.4'
-  compile 'mysql:mysql-connector-java:5.1.39'
-  testCompile 'org.spockframework:spock-core:0.7-groovy-2.0'
-}
-
-liquibase {
-  activities {
-    main {
-      changeLogFile 'src/main/migrations/changelogs.groovy'
-      // Note: you should use the external variable ORG_GRADLE_PROJECT_variableName
-      url url
-      username username
-      password password
-    }
-  }
+  compile('org.springframework.boot:spring-boot-starter-data-jpa')
+  compile('org.springframework.boot:spring-boot-starter-data-rest')
+  compile('org.springframework.boot:spring-boot-starter-groovy-templates')
+  compile('org.springframework.boot:spring-boot-starter-web')
+  compile('org.codehaus.groovy:groovy')
+  runtime('mysql:mysql-connector-java')
+  testCompile('org.springframework.boot:spring-boot-starter-test') 
 }
