@@ -9,7 +9,7 @@ class SearchService {
   RESTClient restClient
 
   def addPolicy(Policy policy) {
-    def response = restClient.post(path:'/policy'){
+    def response = restClient.post(path:"/policy/${policy.id}"){
       json policy.properties
     }
     response.json
