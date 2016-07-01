@@ -28,7 +28,6 @@ class PolicyController {
           listElementInRow.add(data)
         }
         policyService.createPolicyEntity(listElementInRow)
-        println 1
       }
     }
     redirect (action:'list')
