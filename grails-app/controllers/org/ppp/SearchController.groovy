@@ -8,8 +8,11 @@ class SearchController {
 
   def index() {
     def results = (searchService.queryFor(params.q))
-    render(contentType: 'application/json') {
-      results
+    List resultList = []
+    results.hits.hits*._source.each {row ->
+      resultList << new Policy(row)
     }
+    println resultList
+    render view:'/policy/list', model:[policyities:resultList]
   }
 }
