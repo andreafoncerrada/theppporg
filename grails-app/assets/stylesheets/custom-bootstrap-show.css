@@ -9,7 +9,6 @@ a:focus {
 body{
     margin:0;
     padding:0;
-    background: #00B5C2;
     background-repeat:no-repeat;
     background-size:100% 100%;
     font-family: 'Open Sans', sans-serif;
@@ -60,7 +59,7 @@ ul#lista li{
 .last {
     padding-right: 0px;
     padding-left: 0px;
-    min-height:284px !important;    
+    min-height:284px !important;
 }
 .background {
     background-color: #fff;
@@ -81,14 +80,14 @@ ul#lista li{
     margin-bottom: 0;
     line-height: 1.6;
 }
-.main-title {    
+.main-title {
     font-weight: 300;
     font-size: 24px;
     line-height: 1.4;
     margin-top: 10px;
     margin-bottom: 10px;
 }
-.main-title2 {    
+.main-title2 {
     font-weight: 300;
     font-size: 18px;
     line-height: 1.4;
@@ -102,13 +101,13 @@ ul#lista li{
 }
 .orange-btn {
     background: #FF9200;
-    color: white;    
+    color: white;
 }
 .orange-plus {
-    color: #FF9200;    
+    color: #FF9200;
 }
 .blue-down {
-    color: #00B5C2;    
+    color: #00B5C2;
 }
 .section-text {
     line-height: 1.6;
@@ -163,7 +162,7 @@ ul#lista li{
         min-height: 470px !important;
     }
     .background p {
-        line-height: 22px;        
+        line-height: 22px;
     }
     .background p,
     .background li {
@@ -176,10 +175,10 @@ ul#lista li{
         margin: 0 0 10px;
     }
     .btn {
-        margin-top: 15px;        
+        margin-top: 15px;
     }
     .background {
-        background-color: #fff;        
+        background-color: #fff;
     }
     .last {
         min-height: 235px !important;
@@ -226,7 +225,7 @@ ul#lista li{
         margin: 0 0 20px;
     }
     .btn {
-        margin-top: 20px;        
+        margin-top: 20px;
     }
     .last {
         min-height: 284px !important;
@@ -242,7 +241,7 @@ ul#lista li{
     .navbar-toggle {
        display:block;
        top: 15px;
-       background-color: white;       
+       background-color: white;
     }
     .fixed-header.scroll .navbar-toggle {
         top: 8px;
