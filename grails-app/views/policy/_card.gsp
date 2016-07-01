@@ -17,7 +17,7 @@
       12
     </div>
     <div class="col-sm-6">
-      <i class="fa fa-plus-circle" aria-hidden="true"></i>See more
+      <g:link action="show" controller="policy" id="${policy.title}"><i class="fa fa-plus-circle" aria-hidden="true"></i>See more</g:link>
     </div>
   </div>
 </div>
