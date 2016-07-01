@@ -20,7 +20,7 @@
     </div>
   </div>
       <g:each in="${policyities}" var="policy">
-        <g:render template="card" collection="${policy}" />
+      <g:render template="/policy/card" collection="${policy}" />
       </g:each>
     </div>
   </body>
