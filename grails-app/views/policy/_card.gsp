@@ -6,8 +6,8 @@
   </div>
   <div class="col-md-12">
     <div class="col-sm-6">
-      <i class="fa fa-download" aria-hidden="true"></i>
-      Download
+      <a href="${policy.linkToPolicyDocuments}"> <i class="fa fa-download" aria-hidden="true"></i>
+        Download</a>
     </div>
     <div class="col-sm-6">
       <i class="fa fa-plus-circle" aria-hidden="true"></i>Add to my list
