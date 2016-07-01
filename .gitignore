@@ -2,5 +2,5 @@ src/main/webapp/third-party/
 .gradle/
 build/
 **/.DS_Store
-grails-app/assets/javascripts/third-party/:w
+grails-app/assets/javascripts/third-party/
 .asscache
