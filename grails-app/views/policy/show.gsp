@@ -2,22 +2,23 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="layout" content="pphub">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/custom-bootstrap-show.css">
+    <asset:stylesheet src="custom-bootstrap-show.css"/>
     <title>PPHub</title>
 </head>
 <body>
     <div class="container">
-        <section class="col-md-12 content" id="home">
+        <section class="col-md-10 content" id="home">
            <div class="col-lg-6 col-md-6 content-item">
-               <img src="images/3.jpg" alt="Image" class="tm-image">
+               <asset:image src="show.png" width="60%"  class="tm-image" />
            </div>
            <div class="col-lg-6 col-md-6 content-item content-item-1 background">
-               <h2 class="main-title text-center"><b>Crossing the Civil-Military Divide: Structuring a Civilian Role</b></h2>
-               <h5 class="main-title2 text-center">Taiwan, 2002-2008</h5>
-               <p>In 2000, the election of opposition politician Chen Shui-Bian as Taiwan's president upended five decades of rule by the Kuomintang Party, and an era of thight military control over defense decision making. Chen had long favored reforms to increase civilian participation in the areas of defense policy, strategy, and procurement.</p>
+             <h2 class="main-title text-center"><b>${policy.title}</b></h2>
+             <h5 class="main-title2 text-center">${policy.country}, ${policy.dateOfEnactment}</h5>
+               <p>${policy.legislativeReformsActs}</p>
                <div class="col-lg-12 col-md-6">
                  <div class="col-lg-6 col-md-6 sq">
                   <ul id="lista">
@@ -25,7 +26,7 @@
                   <li><b>PP Tasks </b><span style="color:blue;"> José Mouriño</span></li>
                   <li><b>PP Source Type </b><span style="color:blue;"> Sergio Rodríguez</span></li>
                   <li><b>Analysis Type </b><span style="color:blue;"> $1,000,000.00</span></li>
-                 </ul> 
+                 </ul>
                  </div>
                  <div class="col-lg-6 col-md-6 sq">
                   <ul id="lista">
@@ -34,14 +35,14 @@
                   <li><b>Evaluated by </b><span style="color:blue;"> Sergio Rodríguez</span></li>
                   <li><b>Cost </b><span style="color:blue;"> $ 1,000,000.00</span></li>
                   <li><b>Sponsored by </b><span style="color:blue;"> PEPSICO</span></li>
-                 </ul> 
+                 </ul>
                  </div>
                </div>
-               
+
            </div>
        </section>
 
-        <section class="col-md-12 content" id="externals">
+        <section class="col-md-10 content" id="externals">
         <div class="col-lg-6 col-md-6 background last about-text-container">
           <div class="col-lg-12 col-md-6">
            <div class="col-lg-6 col-md-6 sq">
