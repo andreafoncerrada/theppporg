@@ -37,4 +37,9 @@ class PolicyController {
     render view: "list", model:[policyities: Policy.getAll()]
   }
 
+  def show() {
+    def policy = Policy.findByTitle(params.id)
+    render view: "show", model:[policy:policy]
+  }
+
 }
