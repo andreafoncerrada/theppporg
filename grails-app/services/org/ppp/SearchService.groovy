@@ -16,7 +16,7 @@ class SearchService {
   }
 
   def queryFor(String q){
-    def response = restClient.get(path:'/policy/_search', query:[query:q, pretty:true])
+    def response = restClient.get(path:'/policy/_search', query:[q:q, pretty:true])
     response.json
   }
 
