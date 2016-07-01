@@ -6,6 +6,8 @@ import org.ppp.Policy
 @Transactional
 class PolicyService {
 
+    def searchService
+
     def createPolicyEntity(List values) {
       Map policyProperties = [:]
       policyProperties.put("registryNumber",values.get(0) ?: "")
@@ -67,7 +69,8 @@ class PolicyService {
       policyProperties.put("linkToEvalutionEntity",values.get(56) ?: "")
       policyProperties.put("analysisType",values.get(57) ?: "")
       Policy policy = new Policy(policyProperties)
-      policy.save(validate:false)
+      policy.save()
+      searchService.addPolicy(policy)
       policy
     }
 }
