@@ -8,6 +8,7 @@
     <asset:javascript src="/third-party/jquery/dist/jquery.min.js"/>
     <asset:javascript src="/third-party/bootstrap/dist/js/bootstrap.js"/>
     <asset:stylesheet src="custom-bootstrap.css"/>
+    <asset:stylesheet src="/third-party/fontawesome/css/font-awesome.css"/>
     <div class="custom-nav">
       <div align="right">
         Public Policy Market
