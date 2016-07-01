@@ -9,14 +9,14 @@
     <div class="col-md-10">
       <div class="row">
       <div class="col-lg-12">
-      <form>
+        <g:form name="searchPlicy" url="[action:'index', controller:'search']" id="1">
         <div class="input-group">
-          <input type="search" class="form-control" id="exampleInputEmail1" placeholder="Search">
+          <input type="search" class="form-control" id="search" name="q" placeholder="Search">
         <span  class="input-group-btn">
           <button type="submit" class="btn btn-primary">Submit</button>
         </span>
         </div>
-      </form>
+      </g:form>
     </div>
   </div>
       <g:each in="${policyities}" var="policy">
