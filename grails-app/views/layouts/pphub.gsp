@@ -24,48 +24,12 @@
 
           <ul class="nav navbar-nav navbar-right">
             <li class="dropdown">
-            <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="themes">Themes <span class="caret"></span></a>
-            <ul class="dropdown-menu" aria-labelledby="themes">
-              <li><a href="../default/">Default</a></li>
-              <li class="divider"></li>
-              <li><a href="../cerulean/">Cerulean</a></li>
-              <li><a href="../cosmo/">Cosmo</a></li>
-              <li><a href="../cyborg/">Cyborg</a></li>
-              <li><a href="../darkly/">Darkly</a></li>
-              <li><a href="../flatly/">Flatly</a></li>
-              <li><a href="../journal/">Journal</a></li>
-              <li><a href="../lumen/">Lumen</a></li>
-              <li><a href="../paper/">Paper</a></li>
-              <li><a href="../readable/">Readable</a></li>
-              <li><a href="../sandstone/">Sandstone</a></li>
-              <li><a href="../simplex/">Simplex</a></li>
-              <li><a href="../slate/">Slate</a></li>
-              <li><a href="../spacelab/">Spacelab</a></li>
-              <li><a href="../superhero/">Superhero</a></li>
-              <li><a href="../united/">United</a></li>
-              <li><a href="../yeti/">Yeti</a></li>
-            </ul>
+            <g:link controller="policy" action="list" class="dropdown-toggle">Policities</g:link>
             </li>
             <li>
-            <a href="../help/">Help</a>
-            </li>
-            <li>
-            <a href="http://news.bootswatch.com">Blog</a>
             </li>
             <li class="dropdown">
-            <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="download">Sandstone <span class="caret"></span></a>
-            <ul class="dropdown-menu" aria-labelledby="download">
-              <li><a href="http://jsfiddle.net/bootswatch/m0nv7a0o/">Open Sandbox</a></li>
-              <li class="divider"></li>
-              <li><a href="./bootstrap.min.css">bootstrap.min.css</a></li>
-              <li><a href="./bootstrap.css">bootstrap.css</a></li>
-              <li class="divider"></li>
-              <li><a href="./variables.less">variables.less</a></li>
-              <li><a href="./bootswatch.less">bootswatch.less</a></li>
-              <li class="divider"></li>
-              <li><a href="./_variables.scss">_variables.scss</a></li>
-              <li><a href="./_bootswatch.scss">_bootswatch.scss</a></li>
-            </ul>
+            <g:link controller="policy" action="upload" class="dropdown-toggle">Upload</g:link>
             </li>
 
           </ul>
@@ -78,16 +42,42 @@
   <body>
     <div class="col-lg-2 col-md-2 col-sm-3">
       <div class="list-group table-of-contents">
-        <a class="list-group-item" href="#navbar">Navbar</a>
-        <a class="list-group-item" href="#buttons">Buttons</a>
-        <a class="list-group-item" href="#typography">Typography</a>
-        <a class="list-group-item" href="#tables">Tables</a>
-        <a class="list-group-item" href="#forms">Forms</a>
-        <a class="list-group-item" href="#navs">Navs</a>
-        <a class="list-group-item" href="#indicators">Indicators</a>
-        <a class="list-group-item" href="#progress-bars">Progress bars</a>
-        <a class="list-group-item" href="#containers">Containers</a>
-        <a class="list-group-item" href="#dialogs">Dialogs</a>
+        <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+          <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="headingOne">
+              <h4 class="panel-title">
+                <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  Our Recomendations
+                </a>
+              </h4>
+            </div>
+            <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+              <div class="panel-body">
+                <g:link controller="search" action="index" params="[q:'Clean Cities']"class="list-group-item" >Clean Cities</g:link>
+                <g:link controller="search" action="index" params="[q:'Alternative education']"class="list-group-item" >Alternative education</g:link>
+                <g:link controller="search" action="index" params="[q:'Mobility']"class="list-group-item" >Mobility</g:link>
+                <g:link controller="search" action="index" params="[q:'Innovation']"class="list-group-item" >Innovation</g:link>
+                <g:link controller="search" action="index" params="[q:'City management']"class="list-group-item" >City management</g:link>
+              </div>
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="headingTwo">
+              <h4 class="panel-title">
+                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                          Most Creative Policies
+                </a>
+              </h4>
+            </div>
+            <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+              <div class="panel-body">
+                <g:link controller="search" action="index" class="list-group-item" params="[q:'Squats for Tickets']" >Squats for Tickets</g:link>
+                <g:link controller="search" action="index" class="list-group-item" params="[q:'PTEforPets']" >PTEforPets</g:link>
+                <g:link controller="search" action="index" class="list-group-item" params="[q:'Secret Sidewalk Poems']" >Secret Sidewalk Poems</g:link>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
         <g:layoutBody/>
