@@ -67,6 +67,7 @@ dependencies {
 
     runtime "org.grails.plugins:asset-pipeline"
     compile "net.sourceforge.jexcelapi:jxl:2.6.12"
+    compile 'ch.qos.logback:logback-core:1.1.7'
 
     testCompile "org.grails:grails-plugin-testing"
     testCompile "org.grails.plugins:geb"
